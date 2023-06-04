@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CameraDemo</string>
+    <string name="request_permission_rejected">Request Permission Rejected!</string>
+    <string name="feature_not_available">The feature is not yet available</string>
+</resources>

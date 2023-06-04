@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GLRecordActivity">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/glSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:background="@null"
+        android:src="@mipmap/ic_cap"
+        android:id="@+id/btnCapture"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toStartOf="@id/btnRecord"
+        app:layout_constraintBottom_toBottomOf="@id/btnRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/btnRecord"
+        android:src="@mipmap/ic_rec_normal"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:background="@null"
+        android:layout_marginStart="60dp"
+        android:src="@mipmap/ic_setting"
+        android:id="@+id/btnSetting"
+        app:layout_constraintStart_toEndOf="@id/btnRecord"
+        app:layout_constraintBottom_toBottomOf="@id/btnRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.example.camerademo.view.TimerTextView
+        android:id="@+id/textViewRecord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
